@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/version', methods=['GET'])
 def get_version():
     try:
-        ret = {"version": "v1.0.0"}
+        ret = {"version": "v1.0.2"}
         return jsonify(ret), 200
     except Exception as e:
         app.logger.error(e)
